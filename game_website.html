@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Warrior</title>
+    <style>
+        .navbar{
+            left: 0px;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            display: flex;
+            /* border: 2px solid red; */
+            height: 90px;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        a{
+            text-decoration: none;
+            padding: 26px;
+            color: black;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+        }
+        a:hover{
+            cursor: pointer;
+            background-color: blue;
+            color: black;
+        }
+        img{
+            height: 90px;
+            position: absolute;
+            left: 7px;
+        }
+        .butt{
+            position: absolute;
+            /* float: right; */
+            padding: 3px 7px;
+            color: black;
+            background-color: rgb(202, 202, 14);
+            border-radius: 25px;
+            margin-left: 1030px;
+        }
+        .butt:hover{
+            background-color: white;
+            cursor: pointer;
+        }
+        .container{
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            top: 0px;
+            left: 0px;
+        }
+        .container::before{
+            content: "";
+            background: url(background.jfif)no-repeat center center/cover;
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: .7;
+        }
+        h2{
+            position: absolute;
+            left: 92px;
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        h1{
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 180px;
+            left: 25px;
+            font-size: 50px;
+        }
+        p{
+            line-height: normal;
+            /* border: 2px solid black; */
+            width: 500px;
+            margin: 90px 25px;
+            position: absolute;
+            top: 200px;
+        }
+        .btn{
+            position: absolute;
+            top: 400px;
+            left: 25px;
+            border-radius: 25px;
+            padding: 10px;
+            background-color: rgb(191, 191, 14);
+        }
+        .btn:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <img src="https://image.freepik.com/free-vector/ninja-logo-template-with-details_23-2148995970.jpg" alt="">
+            <h2>Ninja Warrior</h2>
+            <a href="/home">Home</a>
+            <a href="/games">Games</a>
+            <a href="/blog">Blog</a>
+            <a href="#">Forums</a>
+            <a href="#">Contact</a>
+            <button class="butt">Login/Register</button>
+        </nav>
+        <h1>The Best Games Out There</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestiae amet beatae, mollitia deleniti vel in quod veniam sequi deserunt, neque consequuntur labore asperiores molestias ipsa architecto odio vitae recusandae velit cupiditate esse. Impedit tempora blanditiis rerum nulla, soluta debitis.</p>
+        <button class="btn">Read More</button>
+    </div>
+</body>
+</html>

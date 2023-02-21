@@ -1,0 +1,219 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+}
+/* Navigation bar: Logo and Image */
+#logo{
+    margin: 0px 20px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 5px 20px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height:0%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 3px 22px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    display: block;
+    padding: 3px 22px;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 578px;
+    top: 0px;
+    left: 0px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg') no-repeat center center/cover;
+    height: 578px;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(204, 202, 202);
+}
+#services .box img{
+    height: 190px;
+    margin: auto;
+    display: block;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#client-section{
+    position: relative;
+    height: 344px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background:url('https://cdn1.vectorstock.com/i/1000x1000/47/95/fast-food-background-top-view-on-black-background-vector-24044795.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 124px;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+    background: url('https://img.freepik.com/free-photo/contact-us_36325-2135.jpg?size=626&ext=jpg')no-repeat center center/cover;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+/* Utility Classes */
+.primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-primary{
+    text-align: center;
+    font-size: 2.8rem;
+    height: 40px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    text-align: center;
+}
+.btn{
+    color: white;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
